@@ -1,0 +1,83 @@
+@media (min-width: 768px) {
+  .caja__flex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content; } }
+
+@media screen and (min-width: 1024px) {
+  body nav div div ul li:hover {
+    transform: scale(1.1);
+    border: 1px solid #4782F0; } }
+
+body main .atari img, body main .nes img, body main .dual img, body main .steamdeck img, body main .re4 img, body main .di2 img, body main .focus img, body main .firewalk img {
+  width: 345px; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* banner */
+header .banner {
+  width: 100%; }
+  header .banner img {
+    width: 100%; }
+
+/* body */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #4782F0; }
+  body p {
+    line-height: 1.5; }
+  body nav div div ul {
+    list-style: none;
+    background-color: #87CEEB;
+    padding: 10px;
+    width: 100%; }
+    body nav div div ul li {
+      display: inline-block;
+      margin: 0px 20px;
+      font-size: large; }
+      body nav div div ul li a {
+        color: black;
+        text-decoration: none; }
+  body div p a {
+    color: white; }
+  body main .separador {
+    background-image: url(../img/ladrillosMF.png);
+    background-repeat: repeat-x; }
+    body main .separador img {
+      width: auto;
+      padding-bottom: 20px; }
+  body main .container .row .caja__grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: max-content;
+    column-gap: 1rem; }
+  body main .container .row .caja__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto; }
+  body main .retrolink {
+    color: white;
+    text-decoration: none; }
+  body main .separador img {
+    background-image: url(../img/ladrillosMF.png);
+    background-repeat: repeat-x;
+    width: auto;
+    padding-bottom: 20px; }
+
+/*footer*/
+footer .pie {
+  background-color: black;
+  display: flex;
+  justify-content: space-between; }
+  footer .pie ul li {
+    list-style: none;
+    padding-top: 10px; }
+    footer .pie ul li a {
+      text-decoration: none;
+      color: white; }

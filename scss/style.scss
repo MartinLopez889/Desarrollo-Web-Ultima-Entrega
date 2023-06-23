@@ -1,0 +1,132 @@
+// import
+@import "utilidades/media";
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// nesting
+/* banner */
+header{
+    .banner{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+ /* body */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $color-secundario;
+    background-color: $color-principal;
+    p{
+        line-height: 1.5;
+    }
+    nav{
+        div{
+            div{
+                ul{
+                    list-style: none;
+                    background-color: $color-navbar;
+                    padding: 10px;
+                    width: 100%;
+                    li{
+                        display: inline-block;
+                        margin: 0px 20px;
+                        font-size: large;
+                        a{
+                            color: $color-link;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div{
+        p{
+            a{
+                color: $color-secundario;
+            }
+        }
+    }
+    main{
+        .atari img{
+            @extend %imagen;
+        }
+        .nes img{
+            @extend %imagen;
+        }
+        .dual img{
+            @extend %imagen;
+        }
+        .steamdeck img{
+            @extend %imagen;
+        }
+        .re4 img{
+            @extend %imagen;
+        }
+        .di2 img{
+            @extend %imagen;
+        }
+        .focus img{
+            @extend %imagen;
+        }
+        .firewalk img{
+            @extend %imagen;
+        }
+        .separador{
+            background-image: url(../img/ladrillosMF.png);
+            background-repeat: repeat-x;
+            img{
+                width:auto;
+                padding-bottom: 20px;
+            }
+        }
+        .container{
+            .row{
+                .caja__grid{
+                    @include grid;
+                }
+                .caja__flex{
+                    @include flex;
+                }
+            }
+        }
+        .retrolink{
+            color:white;
+            text-decoration: none;
+        }
+        .separador{
+            img{
+                background-image: url(../img/ladrillosMF.png);
+                @include img-separador;
+            }
+        }
+    }
+}
+
+/*footer*/
+footer .pie{
+    background-color: rgb(0,0,0);
+    display: flex;
+    justify-content: space-between;
+    ul{
+        li{
+            list-style: none;
+            padding-top: 10px;
+            a{
+                text-decoration: none;
+                color: $color-secundario;
+            }
+        }
+    }
+}

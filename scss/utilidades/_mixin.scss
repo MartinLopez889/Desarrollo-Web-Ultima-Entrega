@@ -1,0 +1,20 @@
+// mixin sin parametros
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: max-content;
+    column-gap: 1rem;
+}
+
+@mixin img-separador{
+    background-repeat: repeat-x;
+    width: auto;
+    padding-bottom: 20px;
+}
